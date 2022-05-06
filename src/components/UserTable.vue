@@ -83,7 +83,7 @@ export default {
 
   setLocation(curLoc) {
     try {
-      history.pushState(null, curLoc, curLoc)
+      history.pushState(null, curLoc, "/spa-app" +curLoc)
       return
     } catch(e) {
       console.log(e)
